@@ -6,7 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 <style>
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -44,7 +48,7 @@ header {
 }
 .links li {
     display: inline-block;
-    padding: 10%;
+    padding: 5%;
 }
 .links a {
   text-decoration: none;
@@ -86,33 +90,43 @@ header {
 }
 /*#section-one css starts here*/
 #section-first {
-    background-color:#2f3542;
+    background-color: #2f3542;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
 }
 .section-one-gif {
     width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 2em 0;
 }
-.section-one-gif img {
-    width: 70%;
-    max-width: 100%;
-    margin: 1em 0;
-    border-radius: 2%;
+.gif-container {
+    flex: 1;
+    text-align: right;
 }
-.section-one-gif p {
+.gif-container img {
     width: 80%;
+    max-width: 100%;
+    border-radius: 2%;
+    margin-right: 5em;
+}
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+.text-container p {
     font-size: 30px;
-    text-align: center;
     margin: 1em 0;
 }
-#fullstack, #webdev {
+#fullstack,
+#webdev {
     color: white;
 }
-#fullstack:hover, #webdev:hover {
+#fullstack:hover,
+#webdev:hover {
     transition: 0.5s ease;
     color: #2e86de;
 }
@@ -122,6 +136,8 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #a4b0be;
+    color: #ffffff;
 }
 .tech-info {
     margin-bottom: 20px;
@@ -148,7 +164,7 @@ article {
     box-sizing: border-box;
 }
 #html-color, #css3-color, #js-color, #react-color, #tailwind-color {
-    color: black;
+    color: white;
 }
 #html-color:hover {
     transition: 0.5s ease;
@@ -172,7 +188,7 @@ article {
 }
 /*Footer css starts here*/
 footer {
-    background-color: #2f3542;
+    background-color: #171a21;
 }
 .social-media {
     display: flex;
@@ -239,14 +255,18 @@ footer {
         transform: translateX(0);
     }
     /*#section-one mobile css starts here*/
-    .section-one-gif img {
-        width: 90%;
+    .section-one-gif {
+        flex-direction: column; 
+        text-align: center;
     }
-    .section-one-gif p {
-        font-size: 20px;
-        text-align: left;
-        margin: 0.5em 0;
-    }    
+    .gif-container img {
+        width: 90%;
+        margin-right: 5%;
+    }
+    .text-container {
+        margin-top: 1em; 
+        width: 80%;
+    }      
     /*article mobile css starts here*/
     .tech {
         flex-direction: column; 
@@ -287,7 +307,8 @@ footer {
             <div class="links">
                 <ul>
                     <li><a href="#main-title">Home</a></li>
-                    <li><a href="##section-one">About me</a></li>
+                    <li><a href="#section-one">About me</a></li>
+                    <li><a href="#section-second">My projects</a></li>
                     <li><a href="#tech-info">What I use</a></li>
                 </ul>
             </div>
@@ -301,9 +322,13 @@ footer {
             </div>
     </main>
     <section id="section-first">
-        <div id="#section-one" class="section-one-gif">
-            <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="">
-            <p>I decided to pursue this career for many reasons, but the main reason is: I love what I do. <br> <br>I want to be a <span id="fullstack">Full-Stack Engineer</span> because I love everything about <span id="webdev">Web Development</span>. From the style of a website to the server-side programming <br> <br> But I also want to learn A.I, Embedded Programming, Machine Learning...</p>
+        <div id="section-one" class="section-one-gif">
+            <div class="gif-container">
+                <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="">
+            </div>
+            <div class="text-container">
+                <p>I decided to pursue this career for many reasons, but the main reason is: I love what I do. <br> <br>I want to be a <span id="fullstack">Full-Stack Engineer</span> because I love everything about <span id="webdev">Web Development</span>. From the style of a website to the server-side programming <br> <br> But I also want to learn A.I, Embedded Programming, Machine Learning...</p>
+            </div>
         </div>
     </section>
     <article>
@@ -376,6 +401,7 @@ footer {
             </div>
         </div>
     </footer>
+    <div class="custom-cursor"></div>
 <script>
 /*This is just the code I used for the animation in the main #section-one. It translates all the section from the left to right 
 when the user scrolls down to the <main>*/
