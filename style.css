@@ -5,14 +5,14 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #a4b0be;
+    background-color: #1D2E61;
 }
 header {
-    background-color: #2f3542;
+    background-color: #0C111C;
     color: white;
 }
 .container {
-    display: flex;
+    display: flex;  
     align-items: center;
 }
 .logo {
@@ -58,6 +58,7 @@ header {
     margin: 0 auto; 
     transform: translateX(-100%);
     transition: transform 1s ease;
+    color: #111113;
 }
 .main-title h1 {
     font-size: 5em;
@@ -80,7 +81,7 @@ header {
 }
 /*#section-one css starts here*/
 #section-first {
-    background-color: #2f3542;
+    background-color: #172448;
     color: white;
     display: flex;
     align-items: center;
@@ -126,8 +127,8 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #a4b0be;
-    color: #000;
+    background-color:#375098;
+    color: #111113;
 }
 .tech-info {
     margin-bottom: 20px;
@@ -143,32 +144,32 @@ article {
     border-right: 1em solid transparent;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
-    background-color: #747d8c;
-    color: #fff;
+    background-color: #1D2E61;
+    color: #EEEEF0;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
-.html5, .css3, .js, .react, .ruby{
+.java, .next, .js, .react, .ruby{
     flex-basis: calc(20% - 2em);
     padding: 0.5em;
     box-sizing: border-box;
     color: white;
 }
-#html-color, #css3-color, #js-color, #react-color, #ruby-color {
+#java-color, #next-color, #js-color, #react-color, #ruby-color {
     color: white;
 }
-#html-color:hover {
+#java-color:hover {
     transition: 0.5s ease;
-    color: rgb(255, 111, 0);
+    color: rgb(255, 81, 0);
 }
-#css3-color:hover {
+#next-color:hover {
     transition: 0.5s ease;
-    color: rgb(0, 133, 209);
+    color: rgb(0, 0, 0);
 }
 #js-color:hover {
     transition: 0.5s ease;
-    color: rgb(219, 219, 0);
+    color: rgb(18, 74, 255);
 }
 #react-color:hover {
     transition: 0.5s ease;
@@ -180,7 +181,7 @@ article {
 }
 /*Footer css starts here*/
 footer {
-    background-color: #171a21;
+    background-color: #0C111C;
 }
 .social-media {
     display: flex;
@@ -192,7 +193,7 @@ footer {
 }
 .social-media a {
     text-decoration: none;
-    color: #ffffff;
+    color: #EEEEF0;
 }
 .social-media a:hover {
     transition: 0.5s ease;
