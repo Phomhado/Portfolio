@@ -5,10 +5,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: #1D2E61;
+    background-color: gray;
 }
 header {
-    background-color: #0C111C;
+    background-color: #252525;
     color: white;
 }
 .container {
@@ -81,7 +81,7 @@ header {
 }
 /*#section-one css starts here*/
 #section-first {
-    background-color: #172448;
+    background-color: #252525;
     color: white;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@ article {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:#375098;
+    background-color:gray;
     color: #111113;
 }
 .tech-info {
@@ -144,7 +144,7 @@ article {
     border-right: 1em solid transparent;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
-    background-color: #1D2E61;
+    background-color: #4b4b4b;
     color: #EEEEF0;
     padding: 20px;
     max-width: 1200px;
@@ -181,7 +181,7 @@ article {
 }
 /*Footer css starts here*/
 footer {
-    background-color: #0C111C;
+    background-color: #252525;
 }
 .social-media {
     display: flex;
