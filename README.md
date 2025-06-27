@@ -1,2 +1,2 @@
 # Portfolio
-Current (but old) Portfolio... I made this back when I was first learning Web Dev, so stay updated for a new and better Portfolio!
+Old Portfolio... I made this back when I was first learning Web Development so it was made with pure Html, Css and JS
